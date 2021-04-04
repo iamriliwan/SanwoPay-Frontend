@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous/>
+    <link rel=" stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+    <div class="sidenav">
+        <a href="index.html" class="sanwopay">SanwoPay</a><br>
+        <div class="spacer">
+
+        </div>
+        <div class="list-group">
+            <a href="dashboards.html" id="nav" class="list-group-item"><i class="fa fa-tachometer fa-fw"></i> Dashboard</a>
+            <a href="transactions.html" id="nav" class="list-group-item"><i class="fa fa-book fa-fw"></i> Transactions</a>
+            <a href="loans.html" id="nav" class="list-group-item"><i class="fa fa-bank fa-fw"></i> Loans</a>
+            <a href="savings.html" id="nav" class="list-group-item"><i class="fa fa-bank fa-fw"></i> Savings</a>
+            <a href="users.html" id="nav" class="list-group-item"><i class="fa fa-user fa-fw"></i> Users</a>
+        </div>
+        <div class="spacer2">
+
+        </div>
+        <div class="list-group">
+            <a href="settings.html" id="nav" class="list-group-item"><i class="fa fa-cogs fa-fw"></i> Settings</a>
+            <a href="logout.html" id="nav" class="list-group-item"><i class="fa fa-power-off fa-fw"></i> Logout</a>
+        </div>
+    </div>
+    <!-- Navbar Ends -->
+
+    <!-- Body Starts -->
+<div class="main">
+
+        <header>
+            <i class="fas fa-notification"></i>
+            <img src="./images/profie.jpg" class="rounded-circle" id="img_style" /><span>Adebimpe</span>
+            <!-- <h4>Adebimpe </h4> -->
+        </header>
+
+        <!-- Dashboard start -->
+        <div class="setting_background">
+        <div class="space"></div>
+            <div class="grid">
+                <div class="box">
+                    <h1 class="heading_box">N250,000</h1>
+                    <h6>Total sales for today</h6>
+                </div>
+                <div class="box2">
+                    <h1 class="heading_box">N250,000</h1>
+                    <h6>Total spents</h6>
+                </div>
+                <div class="box3">
+                    <h1 class="heading_box">N250,000</h1>
+                    <h6>Total loans</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="revenue">Revenue</h3>
+                    <h5>This Month</h5>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <h3 class="employees">Employees</h3>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="images/profie.jpg" class="rounded-circle" id="img_style"> 
+                            </div>
+                            <div class="col-md-8">
+                                <strong>Ohunayo Gege</strong><br>
+                                <p class="">Full-stack Developer</p>
+                            </div>
+                            <div class="col-md-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="images/profie.jpg" class="rounded-circle" id="img_style"> 
+                            </div>
+                            <div class="col-md-8">
+                                <strong>Ohunayo Gege</strong><br>
+                                <p class="">Full-stack Developer</p>
+                            </div>
+                            <div class="col-md-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="images/profie.jpg" class="rounded-circle" id="img_style"> 
+                            </div>
+                            <div class="col-md-8">
+                                <strong>Ohunayo Gege</strong><br>
+                                <p class="">Full-stack Developer</p>
+                            </div>
+                            <div class="col-md-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    
+                      </ul>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="revenue">Top Customers</h3>
+                    <h5>This Month</h5>
+                    <canvas id="barChart"></canvas>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 class="revenue">Goal Overview</h3>
+                </div>
+            </div>
+            
+
+        </div>
+        
+
+        <!-- Dashboard End -->
+
+
+    
+    
+        </div>
+        
+</div>
+        <!-- Body ends -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src='js/chart.js'></script>
+    
+
+</html>

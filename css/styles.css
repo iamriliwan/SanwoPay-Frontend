@@ -1,0 +1,283 @@
+body {
+padding: 0%;
+margin: 0%;
+font-family: Montserrat;
+background-color: #e5e5e5;
+}
+header {
+background-color: rgb(165, 165, 165);
+width: 100% !important;
+color: black;
+text-align: right !important;
+}
+/* Side Navbar Styles Starts */
+.sanwopay {
+font-weight: 900 !important;
+color: blue !important;
+padding: 2% !important;
+font-size: 35px;
+margin-left: 5%;
+}
+.sanwopay:hover {
+text-decoration-line: none;
+}
+.sidenav {
+height: 100% !important;
+width: 20% !important;
+position: fixed !important;
+z-index: 1 !important;
+top: 0 !important;
+left: 0 !important;
+background-color: #e5e5e5 !important;
+overflow-x: hidden !important;
+padding-top: 20px !important;
+border-right: 2px solid rgb(225, 225, 225);
+box-shadow: black;
+}
+#nav:hover {
+text-decoration-line: none;
+color: blue !important;
+}
+.spacer {
+margin-bottom: 20%;
+}
+.spacer2 {
+margin-bottom: 70%;
+}
+
+#nav {
+background-color: none !important;
+color: none !important;
+background: none !important;
+border: none !important;
+color: black !important;
+font-size: 18px !important;
+font-weight: bold !important;
+padding: 3% !important;
+font-family: Montserrat !important;
+margin-left: 5% !important;
+}
+/* Side Navbar Styles Ends */
+
+#img_style {
+width: 40px !important;
+height: 43px !important;
+}
+
+/* Body Starts */
+.main {
+margin-left: 13% !important; /* Same as the width of the sidenav */
+font-size: 14px !important;
+}
+
+
+/* Settings Styles Start */
+.setting{
+    font-weight: 800 !important;
+    font-size: 25px;
+}
+.notification{
+    font-weight: bold;
+    font-size: 15px;
+}
+.message{
+    font-size: 16px;
+}
+.space{
+    margin-bottom: 10%;
+}
+.setting_background{
+    margin-left: 20%;
+    width: 78% !important;
+}
+.mid{
+text-align: center !important;
+}
+/* Toggle button style start */
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+input:checked + .slider {
+background-color: #2196f3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+.slider.round {
+border-radius: 50px;
+}
+.slider.round:before {
+border-radius: 50%;
+}
+#center{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+/* Toggle button style ends */
+
+/* Settings Styles End */
+
+
+/* Dashboard Styles Start */
+.dashboard-spacer{
+    margin-bottom: 5% !important;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 5% !important;
+}
+.box{
+    width: 250px;
+    height: 150px;
+    background-color: #fcfca7;
+    color: black;
+    /* border-radius: 10%; */
+    text-align: center;
+    padding: 5%;
+    box-shadow: 3px 3px #888888;
+}
+.box2{
+    width: 250px;
+    height: 150px;
+    background-color: #dadada;
+    color: black;
+    /* border-radius: 10%; */
+    text-align: center;
+    padding: 5%;
+    box-shadow: 3px 3px #888888;
+}
+.box3{
+    width: 250px;
+    height: 150px;
+    background-color: #a9ffff;
+    color: black;
+    /* border-radius: 10%; */
+    text-align: center;
+    padding: 5%;
+    box-shadow: 3px 3px #888888;
+}
+.heading_box{
+    padding-top: 10% !important;
+    font-weight: 750 !important;
+}
+.revenue{
+    font-weight: 700;
+}
+.employees{
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10% !important;
+}
+.position{
+    margin-left: 20%;
+    margin-top: -50 !important;
+}
+/* Dashboard Styles End */
+
+/* Savings Styles Start */
+.savings_background{
+    margin-left: 10%;
+    width: 90%;
+}
+.table_font{
+    font-weight: bolder !important;
+    font-size: 14px;
+}
+td, th{
+    border: none !important;
+}
+.form{
+    width: 70% !important;
+    border: none !important;
+}
+.text_select{
+    text-transform: uppercase;
+}
+select{
+    border: none !important;
+}
+.saving_space{
+    margin-bottom: 5%;
+}
+/* Saving style End */
+
+/* Loans Style Starts*/
+.completed{
+    background-color: #ccffcc !important;
+    color: #66cc99 !important;
+    height: 30px !important;
+    border: #ccffcc;
+    border-radius: 15% !important;
+}
+.pending{
+    background-color: #ffccff !important;
+    color: #cc99ff !important;
+    height: 30px !important;
+    border: #ffccff;
+    border-radius: 15% !important;
+}
+.decline{
+    background-color: #ffcccc !important;
+    color: #cc6666 !important;
+    height: 30px !important;
+    border: #ffcccc;
+    border-radius: 15% !important;
+}
+/* Loans Style Ends */
+
+/* Transaction style start */
+.box-container{
+    background-color: white;
+}
+.transactions_background{
+    margin-left: 15%;
+    width: 80%;
+}
+.graph_box{
+    border: 2px dashed blue;
+    padding: 5%;
+}
+/* Transaction style end */
